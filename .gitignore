@@ -1,0 +1,4 @@
+# Ignore file without extensions, for golang bin file.
+*
+!*.*
+!*/
