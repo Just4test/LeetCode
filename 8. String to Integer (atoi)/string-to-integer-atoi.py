@@ -1,5 +1,3 @@
-#Run in python 2, to use cmp function.
-
 class Solution(object):
     def myAtoi(self, str):
         """
@@ -8,12 +6,15 @@ class Solution(object):
         """
         INT_MAX = 2147483647
         INT_MIN = -2147483648
-        
+
+        def cmp(ch1, ch2):
+            return ord(ch1) - ord(ch2)
+
         begin = 0
         end = 0
         flag = False
         for i, ch in enumerate(str):
-            print ch, cmp(ch, '0'), cmp(ch, '9')
+            print(ch, cmp(ch, '0'), cmp(ch, '9'))
             if not flag and ch == ' ':
                 continue
             if ch == '-' or ch == '+':
