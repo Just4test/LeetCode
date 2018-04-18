@@ -1,3 +1,5 @@
+#Run in python 2, to use cmp function.
+
 class Solution(object):
     def myAtoi(self, str):
         """
